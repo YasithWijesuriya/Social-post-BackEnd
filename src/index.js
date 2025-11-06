@@ -10,7 +10,14 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",  
+    "https://social-post-cit305.yasithruchiranga95.workers.dev" 
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 app.use(express.json());
 
