@@ -1,0 +1,26 @@
+{
+  "name": "social-media-post-backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.922.0",
+    "@aws-sdk/s3-request-presigner": "^3.922.0",
+    "@clerk/clerk-sdk-node": "^4.13.23",
+    "@clerk/express": "^1.7.45",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.3",
+    "nodemon": "^3.1.10",
+    "zod": "^4.1.12"
+  }
+}
